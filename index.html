@@ -1,13 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>TailwindCSS Mockup Exercise</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="flex justify-around items-center text-base h-40">
+      <div>
+        <img src="public/Logo.png" alt="" />
+      </div>
+      <div>
+        <ul class="flex gap-8 text-gray-600">
+          <li>About</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Testimonials</li>
+          <li>Help</li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-7 justify-between">
+        <a href="" class="font-bold">Sign In</a>
+        <button
+          class="px-10 py-2 rounded-3xl text-red-600 border-red-600 font-bold border-1"
+        >
+          Sign Up
+        </button>
+      </div>
+    </header>
+
+    <section class="flex pl-40">
+      <div class="flex-1/2 py-5">
+        <h1 class="text-5xl/tight font-medium mb-10 tracking-wide">
+          Want anything to be <br />
+          easy with <span class="font-bold">LasleVPN.</span>
+        </h1>
+        <p class="mb-15 text-gray-700">
+          Provide a network for all your needs with ease and fun using
+          <span class="font-bold">LaslesVPN</span> <br />
+          discover interesting features from us.
+        </p>
+        <button
+          class="px-19 py-4 text-lg bg-red-700 font-bold rounded-lg text-gray-200 shadow-red-400 shadow-2xl"
+        >
+          Get started
+        </button>
+      </div>
+      <div class="flex-1/2">
+        <img src="public/Illustration 1.png" alt="" />
+      </div>
+    </section>
+
+    <section class="flex justify-evenly mt-32">
+      <div class="grid grid-cols-2 items-center gap-7">
+        <div
+          class="bg-red-100 flex justify-center items-center h-12 w-12 rounded-full"
+        >
+          <img src="public/Group 1216.png" alt="" />
+        </div>
+        <div>
+          <h1 class="font-bold text-2xl text-gray-800">90+</h1>
+          <p class="text-gray-600 text-lg">Users</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 items-center gap-7">
+        <div
+          class="bg-red-100 flex justify-center items-center h-12 w-12 rounded-full"
+        >
+          <img src="public/Group 1215.png" alt="" />
+        </div>
+        <div>
+          <h1 class="font-bold text-2xl text-gray-800">30+</h1>
+          <p class="text-gray-600 text-lg">Locations</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 items-center gap-7">
+        <div
+          class="bg-red-100 flex justify-center items-center h-12 w-12 rounded-full"
+        >
+          <img src="public/bx_bxs-server.png" alt="" />
+        </div>
+        <div>
+          <h1 class="font-bold text-2xl text-gray-800">50+</h1>
+          <p class="text-gray-600 text-lg">Servers</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-20 grid grid-cols-2 items-center justify-items-center">
+      <div class="justify-self-end">
+        <img src="public/Illustration 2.png" alt="" />
+      </div>
+      <div>
+        <h1 class="text-4xl font-medium mb-9">
+          We Provide Many <br />
+          Features You Can Use
+        </h1>
+        <p class="text-gray-700 mb-5">
+          You can explore the features that we provide with fun and <br />
+          have their own functions each feature.
+        </p>
+        <ul class="text-gray-700">
+          <li class="flex gap-3 mb-3">
+            <img src="public/Group 1120.png" alt="" />
+            Powerfull online protection.
+          </li>
+          <li class="flex gap-3 mb-3">
+            <img src="public/Group 1120.png" alt="" />Internet without borders.
+          </li>
+          <li class="flex gap-3 mb-3">
+            <img src="public/Group 1120.png" alt="" />Supercharged VPN
+          </li>
+          <li class="flex gap-3 mb-3">
+            <img src="public/Group 1120.png" alt="" />No specific time limits.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mt-50 mx-40">
+      <h1 class="text-4xl font-bold text-gray-900 mb-5 text-center">
+        Choose Your Plan
+      </h1>
+      <p class="text-gray-700 mb-7 text-center">
+        Let's choose the package that is best for you and explore it happily and
+        <br />
+        cheerfully.
+      </p>
+
+      <div class="grid grid-cols-3 gap-10 bg-fuchsia-800 min-h-screen">
+        <div class="bg-amber-600 border-gray-400 flex flex-col justify-around items-center h-32">
+          <div class="flex-1/2">
+            <img src="public/Free.png" alt="" />
+            <h1>Free Plan</h1>
+            <ul>
+              <li>Unlimited Bandwitch</li>
+              <li>Encrypted Connection</li>
+              <li>No Traffic Logs</li>
+              <li>Works on All Devices</li>
+            </ul>
+          </div>
+          <div class="flex-1/2">
+            <h1>Free</h1>
+            <button>Select</button>
+          </div>
+        </div>
+        <div class="bg-green-600">
+          <img src="public/Standard.png" alt="" />
+          <h1>Standard Plan</h1>
+          <ul>
+            <li>Unlimited Bandwitch</li>
+            <li>Encrypted Connection</li>
+            <li>Yes Traffic Logs</li>
+            <li>Works on All Devices</li>
+            <li>Connect Anyware</li>
+          </ul>
+        </div>
+        <div class="bg-blue-600">
+          <img src="public/Premium.png" alt="" />
+          <h1>Premium Plan</h1>
+          <ul>
+            <li>Unlimited Bandwitch</li>
+            <li>Encrypted Connection</li>
+            <li>Yes Traffic Logs</li>
+            <li>Works on All Devices</li>
+            <li>Connect Anyware</li>
+            <li>Get New Features</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
