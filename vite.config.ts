@@ -4,5 +4,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: "/tailwind_mockup_exercise"
+  base: "/tailwind_mockup_exercise/"
 })
